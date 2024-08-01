@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+{% if killed_jobs %}
+    {% for killed_job in killed_jobs %}
+        <p>{{killed_job}}</p>
+    {% endfor %}
+{% else %}
+<p>No jobs to kill</p>
+{% endif %}
+{% endblock %}
